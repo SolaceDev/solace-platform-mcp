@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "solace-event-broker-monitor": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "solace-event-broker-monitor-mcp",
+        "solace-broker-monitor-mcp"
+      ],
+      "env": {
+        "SOLACE_SEMP_BASE_URL": "http://localhost:8080/SEMP/v2/monitor",
+        "SOLACE_SEMP_USERNAME": "admin",
+        "SOLACE_SEMP_PASSWORD": "admin"
+      }
+    }
+  }
+}
